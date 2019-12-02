@@ -26,8 +26,8 @@ public:
   void setCost(double);
   double getCost();
   
-  void setReciever(contact);
-  contact getReciever();
+  void setReceiver(contact);
+  contact getReceiver();
   
   void setSender(contact);
   contact getSender();
