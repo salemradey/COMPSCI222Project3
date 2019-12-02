@@ -61,7 +61,7 @@ int main()
         cin>>w;
         o1.setSender(sender);
         o1.setReceiver(reciever);
-        op.pushback(o1);
+        op.push_back(o1);
         
 	}
 	
