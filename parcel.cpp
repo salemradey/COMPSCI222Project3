@@ -18,6 +18,26 @@ Parcel::Parcel(contact con, double w, double f , double c)
   setCost(c);
 }
 
+void Parcel::setReciever(con)
+{
+    
+}
+
+contact Parcel::getReciever()
+{
+    
+}
+
+void Parcel::setSender(con)
+{
+    
+}
+
+contact Parcel::getSender()
+{
+    
+}
+
 double Parcel::calculateCost()
 {
   return (0);
