@@ -34,7 +34,7 @@ public:
   
 private:
   struct sender;
-  struct reciever;
+  struct receiver;
   double weight;
   double fee;                                       //basic fee
   double cost;
