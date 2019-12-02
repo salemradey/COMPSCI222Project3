@@ -34,10 +34,12 @@ int main()
 
     while(whileL == "1")  // Overnight Parcel creation
 	{
+	    OvernightParcel o1;
 	    cout<<"Creating an Overnight Parcel..."<<endl;
 	    cout<<"Enter sender's name: ";
 	    cin.ignore();
 	    getline(cin, sender.name);
+	
 	    
 	    cout<<"Enter sender's address: ";
 	    getline(cin, sender.address);
@@ -57,7 +59,9 @@ int main()
         
         cout<<"Package's weight in ounces: ";
         cin>>w;
-        
+        o1.setSender(sender);
+        o1.setReceiver(reciever);
+        op.pushback(o1);
         
 	}
 	
@@ -78,7 +82,3 @@ int main()
 	}
 
 }
-
-
-
-
