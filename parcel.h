@@ -25,7 +25,13 @@ public:
   
   void setCost(double);
   double getCost();
-
+  
+  void setReciever(contact);
+  contact getReciever();
+  
+  void setSender(contact);
+  contact getSender();
+  
 private:
   struct sender;
   struct reciever;
