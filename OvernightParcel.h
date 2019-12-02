@@ -1,10 +1,11 @@
-  
 /*
-* implementation.cpp
+* OvernightParcel.h
 * Written by : Salem Radey + Joseph Hammond
 * Written for: COMPSCI 222 Project 3 part 1
 * Created on : 11/20/19	
 */
+#ifndef OVERNIGHTPARCEL_H
+#define OVERNIGHTPARCEL_H
 
 #include "parcel.h"
 
@@ -26,3 +27,4 @@ private:
   double stdWeight = 80;                                                   //standard weight = 80 oz
   
 };
+#endif
