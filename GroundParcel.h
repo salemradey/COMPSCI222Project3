@@ -1,5 +1,3 @@
-
-
 #ifndef GROUNDPARCEL_H
 #define GROUNDPARCEL_H
 /*
@@ -13,7 +11,7 @@
 class GroundParcel : public Parcel
 {
 public:
-  GroundParcel(contact, double weight, double fee, double cost);
+  GroundParcel(contact, double, double, double);
   double calculateCost();
   
 };

@@ -13,6 +13,7 @@ class OvernightParcel : public Parcel
 {
 public:
   OvernightParcel(contact, double, double, double, int, double); //constructor
+  OvernightParcel(); //constructor without parameters.
   double calculateCost();                                            //redefining base class's calculateCost()
   
   void setTrackNum(int);

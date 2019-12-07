@@ -14,7 +14,10 @@
 class Parcel
 {
 public:
-  Parcel(contact, double, double, double); //constructor
+  Parcel(contact, contact, double, double, double); //constructor for Parcel.cpp
+  Parcel(contact, double, double, double, int, double); //constructor for OvernightParcel
+  Parcel(contact, double, double, double); //constructor for GroundParcel
+  Parcel(); //constructor for Parcel.cpp. If not, compiler errors out.
   double calculateCost();
   
   void setWeight(double);
@@ -33,8 +36,8 @@ public:
   contact getSender();
   
 private:
-  struct sender;
-  struct receiver;
+  contact sender; //Previously set as "struct sender"
+  contact receiver; //Previously set as "struct receiver"
   double weight;
   double fee;                                       //basic fee
   double cost;

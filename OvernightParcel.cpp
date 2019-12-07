@@ -11,9 +11,9 @@
 #include "OvernightParcel.h"
 using namespace std;
 
-OvernightParcel::OvernightParcel (contact con, double w, double f, double c, 
+OvernightParcel::OvernightParcel (contact send, double w, double f, double c, 
                                   int track, double sw) 
-  : Parcel (con, w, f, c)
+  : Parcel (send, w, f, c, track, sw)
   {
   setWeight(w);
   setFee(f);
@@ -21,6 +21,11 @@ OvernightParcel::OvernightParcel (contact con, double w, double f, double c,
   setTrackNum(track);
   setStdWeight(sw);
   }
+  
+OvernightParcel::OvernightParcel()
+{
+    
+}
 
 double OvernightParcel::calculateCost()
 {
